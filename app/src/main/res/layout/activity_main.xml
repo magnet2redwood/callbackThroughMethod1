@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
     <Button
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ok"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="getsum"/>
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/resulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my result"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

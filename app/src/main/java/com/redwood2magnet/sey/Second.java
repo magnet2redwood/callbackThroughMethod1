@@ -1,17 +1,29 @@
 package com.redwood2magnet.sey;
 
-public class Second {
+public class Second{
     myInterface myInterface;
+    int mul;
 
-    public void myM(myInterface myInterface,int a,int b){
-        myInterface= myInterface;
+    public void getInterface(myInterface myInterface){
+        myInterface =myInterface;
+
+
+
+
+
+    }
+    public void sendResult(int a, int b){
+        mul = a*b;
+
         if(myInterface!= null){
-            int result= a+b;
-            myInterface.getResult(result);
+            myInterface.getSumResult(mul);
         }
-    }
-
 
 
     }
+    public void kucho(){
+        myInterface=null;
+    }
 
+
+        }

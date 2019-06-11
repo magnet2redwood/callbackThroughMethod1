@@ -1,5 +1,7 @@
 package com.redwood2magnet.sey;
 
-public interface myInterface {
-    void getResult(int result);
-}
+interface myInterface{
+
+    public  void getSumResult(int result);
+
+        }
